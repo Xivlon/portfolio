@@ -1,7 +1,8 @@
 # Portfolio — Nuruddin Sattar
 
 Welcome to my portfolio! This has been designed as a single-page interface with a pie-slice module selector driving eight modules (summary, skills, record, projects, deployments, education, certifications, contact)
-Stack
+
+## Stack
 
 -React 19 + TypeScript + Vite
 -Tailwind CSS + shadcn/ui
@@ -10,7 +11,7 @@ Components (40+): accordion, alert-dialog, alert, aspect-ratio, avatar, badge, b
 
 Usage: import { Button } from '@/components/ui/button' import { Card, CardHeader, CardTitle } from '@/components/ui/card'
 
-##Structure:
+## Structure:
 
 src/sections/ Page sections 
 src/hooks/ Custom hooks 

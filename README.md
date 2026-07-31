@@ -1,46 +1,21 @@
 # Portfolio — Nuruddin Sattar
 
-Industrial sci-fi themed portfolio console. Single-page interface: a pie-slice
-module selector drives eight modules (summary, skills, record, projects,
-deployments, education, certifications, contact). All copy follows
-ASD-STE100 Simplified Technical English.
+Welcome to my portfolio! This has been designed as a single-page interface with a pie-slice module selector driving eight modules (summary, skills, record, projects, deployments, education, certifications, contact)
+Stack
 
-## Stack
+-React 19 + TypeScript + Vite
+-Tailwind CSS + shadcn/ui
 
-- React 19 + TypeScript + Vite
-- Tailwind CSS + shadcn/ui
+Components (40+): accordion, alert-dialog, alert, aspect-ratio, avatar, badge, breadcrumb, button-group, button, calendar, card, carousel, chart, checkbox, collapsible, command, context-menu, dialog, drawer, dropdown-menu, empty, field, form, hover-card, input-group, input-otp, input, item, kbd, label, menubar, navigation-menu, pagination, popover, progress, radio-group, resizable, scroll-area, select, separator, sheet, sidebar, skeleton, slider, sonner, spinner, switch, table, tabs, textarea, toggle-group, toggle, tooltip
 
-## Develop
+Usage: import { Button } from '@/components/ui/button' import { Card, CardHeader, CardTitle } from '@/components/ui/card'
 
-```bash
-npm install
-npm run dev
-```
+##Structure:
 
-## Build
-
-```bash
-npm run build
-```
-
-Output lands in `dist/`.
-
-## Deploy on Cloudflare Pages
-
-1. Push this repo to GitHub.
-2. In the Cloudflare dashboard: **Workers & Pages** > **Create** > **Pages** >
-   **Connect to Git**. Select this repository.
-3. Build settings:
-   - **Framework preset:** Vite
-   - **Build command:** `npm run build`
-   - **Build output directory:** `dist`
-4. Deploy. Every push to `main` rebuilds automatically.
-
-Hashed assets in `dist/assets/` get long-lived cache headers via
-`public/_headers`.
-
-## Edit content
-
-All site content lives in `src/data/portfolio.ts` — skills, experience,
-projects, deployments (thumbnails + links), and the certification register
-(completed vs pending). Edit the data file, rebuild, push.
+src/sections/ Page sections 
+src/hooks/ Custom hooks 
+src/types/ Type definitions 
+src/App.css Styles specific to the Webapp 
+src/App.tsx Root React component 
+src/index.css Global styles 
+src/main.tsx Entry point for rendering the Webapp index.html Entry point for the Webapp tailwind.config.js Configures Tailwind's theme, plugins, etc. vite.config.ts Main build and dev server settings for Vite postcss.config.js Config file for CSS post-processing tool

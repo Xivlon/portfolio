@@ -1,0 +1,272 @@
+// Content source for the portfolio system.
+// All copy follows ASD-STE100 Simplified Technical English:
+// short sentences, active voice, approved vocabulary, no slang.
+
+export const identity = {
+  name: 'NURUDDIN SATTAR',
+  role: 'SOFTWARE ENGINEER',
+  domain: 'FULL-STACK SYSTEMS // MOBILE + WEB',
+  tagline: [
+    'Mobile and web applications.',
+    'Designed to specification.',
+    'Built for production.',
+  ],
+  status: 'AVAILABLE FOR HIRE',
+  email: 'nuruddinsattar@gmail.com',
+  phone: '+90 551 004 17 36',
+  linkedin: 'https://linkedin.com/in/nuruddin-sattar-608118251',
+  linkedinLabel: 'linkedin.com/in/nuruddin-sattar-608118251',
+  github: 'https://github.com/Xivlon',
+  githubLabel: 'github.com/Xivlon',
+};
+
+export const summary = [
+  'Full-stack engineer. Builds mobile and web applications from concept to production.',
+  'Owns backend infrastructure and client interfaces at the same time.',
+  'Maintains system compliance with accessibility regulations.',
+  'Delivers in fast environments with limited resources.',
+];
+
+export interface SkillGroup {
+  id: string;
+  label: string;
+  items: { name: string; level: string }[];
+}
+
+export const skillGroups: SkillGroup[] = [
+  {
+    id: 'LNG',
+    label: 'LANGUAGES',
+    items: [
+      { name: 'C', level: 'INTERMEDIATE' },
+      { name: 'Python', level: 'INTERMEDIATE' },
+    ],
+  },
+  {
+    id: 'MOB',
+    label: 'MOBILE + WEB',
+    items: [
+      { name: 'Mobile App Development', level: 'OPERATIONAL' },
+      { name: 'React Native', level: 'OPERATIONAL' },
+      { name: 'Web Engineering', level: 'OPERATIONAL' },
+    ],
+  },
+  {
+    id: 'BCK',
+    label: 'BACKEND + DATA',
+    items: [
+      { name: 'Node.js', level: 'OPERATIONAL' },
+      { name: 'Firebase', level: 'OPERATIONAL' },
+      { name: 'Backend Infrastructure', level: 'OPERATIONAL' },
+      { name: 'Systems Architecture', level: 'OPERATIONAL' },
+    ],
+  },
+  {
+    id: 'OPS',
+    label: 'ANALYSIS + MANAGEMENT',
+    items: [
+      { name: 'Data Analysis', level: 'OPERATIONAL' },
+      { name: 'Project Management', level: 'OPERATIONAL' },
+    ],
+  },
+];
+
+export interface Experience {
+  ref: string;
+  role: string;
+  org: string;
+  location: string;
+  period: string;
+  points: string[];
+}
+
+export const experience: Experience[] = [
+  {
+    ref: 'REC-01',
+    role: 'Lead Mobile Application Developer',
+    org: 'Hold My Luggage Inc',
+    location: 'Miami, FL // Remote',
+    period: '2025-08 — PRESENT',
+    points: [
+      'Designed and deployed Luggster. A full-stack luggage delivery application. Built with React Native, Node.js, and Firebase. Moved from concept to production.',
+      'Built customer web forms. Map routing and delivery cost calculation included.',
+      'Maintained the backend infrastructure and a central admin platform. Covers driver registration, order fulfillment, and secure data deletion.',
+      'Kept the full system compliant with ADA and WCAG accessibility regulations.',
+    ],
+  },
+  {
+    ref: 'REC-02',
+    role: 'Data Entry Clerk',
+    org: 'Room and Course Scheduling Office, The University of Arizona',
+    location: 'Tucson, AZ',
+    period: '2023-03 — 2023-05',
+    points: [
+      'Reviewed and corrected conflicting scheduling data.',
+      'Analyzed room capacity and course requirements. Reduced scheduling conflicts. Improved the use of university resources.',
+      'Worked with faculty and staff to resolve scheduling problems for different stakeholders.',
+    ],
+  },
+  {
+    ref: 'REC-03',
+    role: 'Student Researcher',
+    org: 'Biosystems Analytics and Technology, The University of Arizona',
+    location: 'Tucson, AZ',
+    period: '2022-09 — 2022-12',
+    points: [
+      'Performed bioinformatics research with Excel and web-based tools.',
+      'Improved data entry processes. Reduced manual input time. Kept accuracy high in scientific databases.',
+    ],
+  },
+];
+
+export interface Project {
+  ref: string;
+  name: string;
+  type: string;
+  period: string;
+  stack: string[];
+  points: string[];
+}
+
+export const projects: Project[] = [
+  {
+    ref: 'PRJ-01',
+    name: 'Luggster',
+    type: 'PRODUCTION MOBILE APPLICATION',
+    period: '2025 — PRESENT',
+    stack: ['React Native', 'Node.js', 'Firebase'],
+    points: [
+      'Full-stack luggage delivery application. Built from concept to production.',
+      'Includes customer web forms, map routing, and cost calculation.',
+      'Includes an admin platform for drivers, orders, and secure data deletion.',
+    ],
+  },
+  {
+    ref: 'PRJ-02',
+    name: 'EnergyTechUp',
+    type: 'DOE-SPONSORED CLEAN ENERGY PROGRAM',
+    period: '2023-08 — 2024-03',
+    stack: ['Research', 'Systems Design', 'Hydrogen Distribution'],
+    points: [
+      'Reached regional competition in a U.S. Department of Energy program.',
+      'Designed a theoretical on-reactor hydrogen distribution system. Worked with a team from UT, Rice, FIU, and MNU.',
+      'Verified system feasibility with national laboratories and industry experts.',
+    ],
+  },
+];
+
+export const education = [
+  {
+    ref: 'EDU-01',
+    school: 'Bahcesehir University',
+    degree: 'B.Sc. Electrical and Electronics Engineering',
+    period: '2025-10 — PRESENT',
+    note: 'Coursework: Robotics, AI Systems, Hardware-Software Integration.',
+  },
+  {
+    ref: 'EDU-02',
+    school: 'Florida International University',
+    degree: 'Undergraduate Coursework, Computer Science (Transferred)',
+    period: '— 2025-05',
+    note: 'College of Engineering and Computing.',
+  },
+];
+
+export interface Certification {
+  ref: string;
+  name: string;
+  issuer: string;
+  status: 'COMPLETE' | 'PENDING';
+}
+
+export interface Deployment {
+  ref: string;
+  name: string;
+  kind: string;
+  link: string;
+  thumb?: string; // image path. If empty, a "no signal" frame renders.
+  note: string;
+}
+
+// Live work samples.
+export const deployments: Deployment[] = [
+  {
+    ref: 'DPL-01',
+    name: 'Luggster — Mobile Application',
+    kind: 'MOBILE // PRODUCTION',
+    link: '',
+    thumb: '/images/luggster-app-icon.png',
+    note: 'Full-stack luggage delivery application. Built with React Native, Node.js, and Firebase.',
+  },
+  {
+    ref: 'DPL-02',
+    name: 'Luggster — Customer Order Form',
+    kind: 'WEB // LIVE',
+    link: 'https://lugg-ster.com/',
+    note: 'Customer order form. Map routing and delivery cost calculation included.',
+  },
+  {
+    ref: 'DPL-03',
+    name: 'Open Slot',
+    kind: 'RESERVED',
+    link: '',
+    note: 'This slot is open for the next deployment.',
+  },
+];
+
+export interface ModuleDef {
+  id: string;
+  code: string;
+  label: string;
+  title: string;
+  subtitle: string;
+}
+
+export const modules: ModuleDef[] = [
+  { id: 'file', code: 'M.01', label: 'FILE', title: 'PERSONNEL FILE', subtitle: '// PROFESSIONAL SUMMARY' },
+  { id: 'skills', code: 'M.02', label: 'SKILLS', title: 'CAPABILITY INDEX', subtitle: '// TECHNICAL SKILLS REGISTER' },
+  { id: 'record', code: 'M.03', label: 'RECORD', title: 'SERVICE RECORD', subtitle: '// WORK EXPERIENCE LOG' },
+  { id: 'projects', code: 'M.04', label: 'PROJ', title: 'PROJECT MANIFEST', subtitle: '// DEPLOYED + RESEARCH WORK' },
+  { id: 'deploy', code: 'M.05', label: 'DEPLOY', title: 'DEPLOYMENT BAY', subtitle: '// LIVE WORK SAMPLES' },
+  { id: 'education', code: 'M.06', label: 'EDU', title: 'TRAINING RECORD', subtitle: '// FORMAL EDUCATION' },
+  { id: 'certs', code: 'M.07', label: 'CERTS', title: 'CERTIFICATION SYSTEM', subtitle: '// CREDENTIAL REGISTER + TRACKER' },
+  { id: 'comm', code: 'M.08', label: 'COMM', title: 'COMM CHANNEL', subtitle: '// OPEN FOR SOFTWARE ENGINEER POSITIONS' },
+];
+
+// Completed certifications. Full color on the page.
+// Add entries here when a certification is complete.
+export const completedCertifications: Certification[] = [];
+
+// Certification tracker. Pending items render greyed out.
+export const pendingCertifications: Certification[] = [
+  {
+    ref: 'CERT-01',
+    name: 'AWS Certified Cloud Practitioner',
+    issuer: 'Amazon Web Services',
+    status: 'PENDING',
+  },
+  {
+    ref: 'CERT-02',
+    name: 'AWS Certified Solutions Architect — Associate',
+    issuer: 'Amazon Web Services',
+    status: 'PENDING',
+  },
+  {
+    ref: 'CERT-03',
+    name: 'CompTIA CySA+ (Cyber+)',
+    issuer: 'CompTIA',
+    status: 'PENDING',
+  },
+  {
+    ref: 'CERT-04',
+    name: 'Fundamentals of Deep Learning',
+    issuer: 'NVIDIA Deep Learning Institute',
+    status: 'PENDING',
+  },
+  {
+    ref: 'CERT-05',
+    name: 'Certified Kubernetes Administrator (CKA)',
+    issuer: 'Cloud Native Computing Foundation',
+    status: 'PENDING',
+  },
+];

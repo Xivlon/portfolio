@@ -34,7 +34,8 @@ export default function Skills() {
   }`}
 >
   {item.level}
-</span>
+                </span>
+
                 </li>
               ))}
             </ul>

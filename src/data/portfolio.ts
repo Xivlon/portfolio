@@ -1,7 +1,3 @@
-// Content source for the portfolio system.
-// All copy follows ASD-STE100 Simplified Technical English:
-// short sentences, active voice, approved vocabulary, no slang.
-
 export const identity = {
   name: 'NURUDDIN SATTAR',
   role: 'SOFTWARE ENGINEER',
@@ -175,6 +171,7 @@ export const education = [
 export interface Certification {
   ref: string;
   name: string;
+  Desc: string;
   issuer: string;
   status: 'COMPLETE' | 'PENDING';
 }

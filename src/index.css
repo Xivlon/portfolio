@@ -4,7 +4,6 @@
 
 @layer base {
   :root {
-    --alert: 0 72% 51%;
     --background: 220 14% 4%;
     --foreground: 210 12% 82%;
     --card: 220 13% 7%;
@@ -25,6 +24,7 @@
     --input: 216 12% 17%;
     --ring: 41 100% 50%;
     --radius: 0.125rem;
+    --alert: 0 72% 51%;
   }
 }
 

@@ -212,6 +212,7 @@ export const deployments: Deployment[] = [
     name: 'Millimera',
     kind: 'WEB // DEMO'',
     link: 'https://millimera.nuruddinsattar.workers.dev',
+    thumb: '/images/millimera.png',
     note: 'Demo website with multipage navigation and embeded components',
   },
 ];

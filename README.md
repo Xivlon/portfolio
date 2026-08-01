@@ -1,6 +1,6 @@
 # Portfolio — Nuruddin Sattar
 
-Welcome to my portfolio! This has been designed as a single-page interface with an eight section pie-slice selector (summary, skills, record, projects, deployments, education, certifications, contact)
+Welcome to my portfolio! This has been designed as a single-page interface with an eight section pie-slice navigation selector (summary, skills, record, projects, deployments, education, certifications, contact)
 
 ## Stack
 

@@ -209,10 +209,10 @@ export const deployments: Deployment[] = [
   },
   {
     ref: 'DPL-03',
-    name: 'Open Slot',
-    kind: 'RESERVED',
-    link: '',
-    note: 'This slot is open for the next deployment.',
+    name: 'Millimera',
+    kind: 'WEB // DEMO'',
+    link: 'https://millimera.nuruddinsattar.workers.dev',
+    note: 'Demo website with multipage navigation and embeded components',
   },
 ];
 

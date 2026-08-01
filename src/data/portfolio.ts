@@ -171,7 +171,7 @@ export const education = [
 export interface Certification {
   ref: string;
   name: string;
-  Desc: string;
+  desc: string;
   issuer: string;
   status: 'COMPLETE' | 'PENDING';
 }
@@ -240,32 +240,35 @@ export const pendingCertifications: Certification[] = [
   {
     ref: 'CERT-01',
     name: 'AWS Developer',
-    Desc: 'This learning plan teaches developers and anyone performing application development functions how to build, deploy, and operate cloud-native applications on AWS',
+    desc: 'This learning plan teaches developers and anyone performing application development functions how to build, deploy, and operate cloud-native applications on AWS',
     issuer: 'Amazon Web Services',
     status: 'PENDING',
   },
   {
     ref: 'CERT-02',
     name: 'AWS Security Engineer-Advanced',
-    Desc: 'comprehensive learning plan covers crucial aspects of cloud security needed to perform a Security Engineer role using the AWS Cloud. The training focuses on 3 primary functions including, proactive planning, active monitoring and responsive action',
+    desc: 'comprehensive learning plan covers crucial aspects of cloud security needed to perform a Security Engineer role using the AWS Cloud. The training focuses on 3 primary functions including, proactive planning, active monitoring and responsive action',
     issuer: 'Amazon Web Services',
     status: 'PENDING',
   },
   {
     ref: 'CERT-03',
     name: 'CompTIA CySA+ (Cyber+)',
+    desc:'',
     issuer: 'CompTIA',
     status: 'PENDING',
   },
   {
     ref: 'CERT-04',
     name: 'Fundamentals of Deep Learning',
+    desc:'',
     issuer: 'NVIDIA Deep Learning Institute',
     status: 'PENDING',
   },
   {
     ref: 'CERT-05',
     name: 'Certified Kubernetes Administrator (CKA)',
+    desc:'',
     issuer: 'Cloud Native Computing Foundation',
     status: 'PENDING',
   },

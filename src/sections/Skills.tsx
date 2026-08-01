@@ -27,7 +27,7 @@ export default function Skills() {
                   <span
                     className={`shrink-0 border px-2 py-0.5 text-[10px] tracking-widest ${
                       {
-                        ADVANCED: 'border-alert/60 text-alert bg-alert/10',
+                        ADVANCED: 'border-red-500/60 text-red-500 bg-red-500/10',
                         OPERATIONAL: 'border-primary/40 text-primary',
                         INTERMEDIATE: 'border-accent/50 text-accent',
                       }[item.level] ?? 'border-border text-muted-foreground'

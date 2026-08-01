@@ -25,14 +25,16 @@ export default function Skills() {
                     {item.name}
                   </span>
                   <span
-                    className={`shrink-0 border px-2 py-0.5 text-[10px] tracking-widest ${
-                      item.level === 'INTERMEDIATE'
-                        ? 'border-accent/50 text-accent'
-                        : 'border-primary/40 text-primary'
-                    }`}
-                  >
-                    {item.level}
-                  </span>
+  className={`shrink-0 border px-2 py-0.5 text-[10px] tracking-widest ${
+    {
+      ADVANCED: 'border-alert/60 text-alert bg-alert/10',
+      OPERATIONAL: 'border-primary/40 text-primary',
+      INTERMEDIATE: 'border-accent/50 text-accent',
+    }[item.level] ?? 'border-border text-muted-foreground'
+  }`}
+>
+  {item.level}
+</span>
                 </li>
               ))}
             </ul>

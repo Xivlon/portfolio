@@ -203,6 +203,7 @@ export const deployments: Deployment[] = [
     name: 'Luggster — Customer Order Form',
     kind: 'WEB // LIVE',
     link: 'https://lugg-ster.com/',
+    thumb: '/images/OrderFormMap.png',
     note: 'Customer order form. Map routing and delivery cost calculation included.',
   },
   {

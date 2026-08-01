@@ -242,15 +242,17 @@ export const completedCertifications: Certification[] = [];
 export const pendingCertifications: Certification[] = [
   {
     ref: 'CERT-01',
-    name: 'AWS Certified Cloud Practitioner',
+    name: 'AWS Developer',
+    Desc: 'This learning plan teaches developers and anyone performing application development functions how to build, deploy, and operate cloud-native applications on AWS',
     issuer: 'Amazon Web Services',
     status: 'PENDING',
   },
   {
     ref: 'CERT-02',
-    name: 'AWS Certified Solutions Architect — Associate',
+    name: 'AWS Security Engineer-Advanced',
+    Desc: 'comprehensive learning plan covers crucial aspects of cloud security needed to perform a Security Engineer role using the AWS Cloud. The training focuses on 3 primary functions including, proactive planning, active monitoring and responsive action',
     issuer: 'Amazon Web Services',
-    status: 'COMPLETE',
+    status: 'PENDING',
   },
   {
     ref: 'CERT-03',

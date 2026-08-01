@@ -250,7 +250,7 @@ export const pendingCertifications: Certification[] = [
     ref: 'CERT-02',
     name: 'AWS Certified Solutions Architect — Associate',
     issuer: 'Amazon Web Services',
-    status: 'PENDING',
+    status: 'COMPLETE',
   },
   {
     ref: 'CERT-03',

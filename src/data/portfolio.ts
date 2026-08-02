@@ -195,7 +195,7 @@ export const deployments: Deployment[] = [
     kind: 'MOBILE // PRODUCTION',
     link: '',
     thumb: '/images/luggster-app-icon.png',
-    note: 'Full-stack luggage delivery application. Built with React Native, Node.js, Railway, and NeonDB.',
+    note: 'Full-stack luggage delivery application. Built with React Native, Node.js, PostgreSQL.',
   },
   {
     ref: 'DPL-02',

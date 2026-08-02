@@ -17,8 +17,7 @@ export const identity = {
 };
 
 export const summary = [
-  'Full-stack engineer. Builds mobile and web applications from concept to production.',
-  'Owns backend infrastructure and client interfaces at the same time.',
+  'Full-stack software developer with 2 years of experience engineering end‑to‑end software solutions, specializing in React Native, Node.js, and cloud‑native backend architectures.',
   'Maintains system compliance with accessibility regulations.',
   'Delivers in fast environments with limited resources.',
 ];
@@ -88,8 +87,8 @@ export const experience: Experience[] = [
     location: 'Miami, FL // Remote',
     period: '2025-08 — PRESENT',
     points: [
-      'Designed and deployed Luggster. A full-stack luggage delivery application. Built with React Native, Node.js, and Firebase. Moved from concept to production.',
-      'Built customer web forms. Map routing and delivery cost calculation included.',
+      'Designed and deployed Luggster, a luggage delivery application, within 6 months of contract signing. Built with React Native, Node.js, and Firebase.',
+      'Engineered dynamic web customer intake forms with integrated interactive mapping APIs, streamlining routing accuracy and reducing risk of delivery cost calculation errors to 0% .',
       'Maintained the backend infrastructure and a central admin platform. Covers driver registration, order fulfillment, and secure data deletion.',
       'Kept the full system compliant with ADA and WCAG accessibility regulations.',
     ],
@@ -101,9 +100,8 @@ export const experience: Experience[] = [
     location: 'Tucson, AZ',
     period: '2023-03 — 2023-05',
     points: [
-      'Reviewed and corrected conflicting scheduling data.',
-      'Analyzed room capacity and course requirements. Reduced scheduling conflicts. Improved the use of university resources.',
-      'Worked with faculty and staff to resolve scheduling problems for different stakeholders.',
+      'Applied data‑validation methods to review and correct conflicting records, improving data accuracy.',
+      'Analyzed room capacities and course requirements to optimize space allocation, ensuring efficient use of university resources and minimizing scheduling conflicts.',
     ],
   },
   {

@@ -56,7 +56,7 @@ export const skillGroups: SkillGroup[] = [
     label: 'BACKEND + DATA',
     items: [
       { name: 'Node.js', level: 'OPERATIONAL' },
-      { name: 'Firebase', level: 'OPERATIONAL' },
+      { name: 'PostgreSQL', level: 'OPERATIONAL' },
       { name: 'Backend Infrastructure', level: 'OPERATIONAL' },
       { name: 'Systems Architecture', level: 'OPERATIONAL' },
     ],
@@ -197,7 +197,7 @@ export const deployments: Deployment[] = [
     kind: 'MOBILE // PRODUCTION',
     link: '',
     thumb: '/images/luggster-app-icon.png',
-    note: 'Full-stack luggage delivery application. Built with React Native, Node.js, and Firebase.',
+    note: 'Full-stack luggage delivery application. Built with React Native, Node.js, Railway, and NeonDB.',
   },
   {
     ref: 'DPL-02',

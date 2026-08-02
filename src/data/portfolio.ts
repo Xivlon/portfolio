@@ -87,7 +87,7 @@ export const experience: Experience[] = [
     location: 'Miami, FL // Remote',
     period: '2025-08 — PRESENT',
     points: [
-      'Designed and deployed Luggster, a luggage delivery application, within 6 months of contract signing. Built with React Native, Node.js, and Firebase.',
+      'Designed and deployed Luggster, a luggage delivery application, within 6 months of contract signing. Built with React Native, Node.js, Railway, and NeonDB (PostgreSQL).',
       'Engineered dynamic web customer intake forms with integrated interactive mapping APIs, streamlining routing accuracy and reducing risk of delivery cost calculation errors to 0% .',
       'Maintained the backend infrastructure and a central admin platform. Covers driver registration, order fulfillment, and secure data deletion.',
       'Kept the full system compliant with ADA and WCAG accessibility regulations.',

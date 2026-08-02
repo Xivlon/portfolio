@@ -132,7 +132,7 @@ export const projects: Project[] = [
     name: 'Luggster',
     type: 'PRODUCTION MOBILE APPLICATION',
     period: '2025 — PRESENT',
-    stack: ['React Native', 'Node.js', 'Firebase'],
+    stack: ['React Native', 'Node.js', 'PostgreSQL'],
     points: [
       'Full-stack luggage delivery application. Built from concept to production.',
       'Includes customer web forms, map routing, and cost calculation.',

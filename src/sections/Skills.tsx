@@ -1,26 +1,20 @@
 import { skillGroups } from '@/data/portfolio';
 
+// Signal strength scale: 1 bar = OPERATIONAL, 2 = INTERMEDIATE, 3 = ADVANCED.
 const LEVEL_ORDER: Record<string, number> = {
-  ADVANCED: 3,
-  INTERMEDIATE: 2,
   OPERATIONAL: 1,
+  INTERMEDIATE: 2,
+  ADVANCED: 3,
+};
+const LEVEL_COLOR: Record<string, string> = {
+  OPERATIONAL: 'bg-red-500',
+  INTERMEDIATE: 'bg-primary',
+  ADVANCED: 'bg-accent',
 };
 
-const LEVEL_STYLE: Record<string, string> = {
-  ADVANCED: 'border-red-500/60 text-red-500 bg-red-500/10',
-  INTERMEDIATE: 'border-accent/50 text-accent',
-  OPERATIONAL: 'border-primary/40 text-primary',
-};
-
-// 3-segment signal bar. Lit segments match the tag color.
 function SignalBar({ level }: { level: string }) {
   const lit = LEVEL_ORDER[level] ?? 0;
-  const litColor =
-    level === 'ADVANCED'
-      ? 'bg-red-500'
-      : level === 'INTERMEDIATE'
-        ? 'bg-accent'
-        : 'bg-primary';
+  const litColor = LEVEL_COLOR[level] ?? 'bg-border';
   return (
     <span className="flex items-end gap-[3px]" aria-hidden="true">
       {[1, 2, 3].map((seg) => (
@@ -34,9 +28,38 @@ function SignalBar({ level }: { level: string }) {
   );
 }
 
+// Legend: one key for the whole module, not a tag per row.
+const legend = [
+  { level: 'OPERATIONAL', bars: 1, color: 'text-red-500' },
+  { level: 'INTERMEDIATE', bars: 2, color: 'text-primary' },
+  { level: 'ADVANCED', bars: 3, color: 'text-accent' },
+];
 export default function Skills() {
   return (
     <div>
+      {/* Key */}
+      <div className="mb-4 flex flex-wrap items-center gap-x-6 gap-y-2 border border-border bg-card/50 px-4 py-2.5">
+        <span className="text-[10px] tracking-[0.3em] text-muted-foreground">KEY</span>
+        {legend.map((entry) => (
+          <span key={entry.level} className="flex items-center gap-2">
+            <span className="flex items-end gap-[3px]">
+              {[1, 2, 3].map((seg) => (
+                <span
+                  key={seg}
+                  className={`w-[3px] ${
+                    seg <= entry.bars ? LEVEL_COLOR[entry.level] : 'bg-border'
+                  }`}
+                  style={{ height: `${4 + seg * 3}px` }}
+                />
+              ))}
+            </span>
+            <span className={`text-[10px] tracking-[0.2em] ${entry.color}`}>
+              {entry.level}
+            </span>
+          </span>
+        ))}
+      </div>
+
       <div className="grid gap-4 sm:grid-cols-2">
         {skillGroups.map((group) => (
           <div key={group.id} className="brackets brackets-all fx-glow border border-border bg-card/70">
@@ -60,25 +83,13 @@ export default function Skills() {
                       <span className="inline-block h-1.5 w-1.5 bg-primary" />
                       {item.name}
                     </span>
-                    <span className="flex shrink-0 items-center gap-2.5">
-                      <SignalBar level={item.level} />
-                      <span
-                        className={`border px-2 py-0.5 text-[10px] tracking-widest ${
-                          LEVEL_STYLE[item.level] ?? 'border-border text-muted-foreground'
-                        }`}
-                      >
-                        {item.level}
-                      </span>
-                    </span>
+                    <SignalBar level={item.level} />
                   </li>
                 ))}
             </ul>
           </div>
         ))}
       </div>
-      <p className="mt-4 text-[11px] tracking-widest text-muted-foreground">
-        NOTE: BARS SHOW SIGNAL STRENGTH. 3 = ADVANCED. 2 = INTERMEDIATE. 1 = OPERATIONAL.
-      </p>
     </div>
   );
 }

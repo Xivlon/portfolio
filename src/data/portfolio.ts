@@ -35,10 +35,11 @@ export const skillGroups: SkillGroup[] = [
     items: [
       { name: 'TypeScript', level: 'ADVANCED' },
       { name: 'JavaScript', level: 'ADVANCED' },
-      { name: 'HTML', level: 'ADVANCED' },
-      { name: 'CSS', level: 'ADVANCED' },
+      { name: 'HTML / CSS', level: 'ADVANCED' },
       { name: 'C', level: 'INTERMEDIATE' },
       { name: 'Python', level: 'INTERMEDIATE' },
+      { name: 'SQL', level: 'INTERMEDIATE' },
+      { name: 'Bash / Shell', level: 'OPERATIONAL' },
     ],
   },
   {
@@ -56,15 +57,17 @@ export const skillGroups: SkillGroup[] = [
     label: 'BACKEND + DATA',
     items: [
       { name: 'Node.js', level: 'ADVANCED' },
-      { name: 'Firebase', level: 'ADVANCED' },
-      { name: 'PostgreSQL', level: 'OPERATIONAL' },
+      { name: 'Firebase (Auth, Firestore, Functions)', level: 'ADVANCED' },
       { name: 'REST API Design', level: 'OPERATIONAL' },
+      { name: 'PostgreSQL (queries, schema design)', level: 'OPERATIONAL' },
     ],
   },
   {
-    id: 'OPS',
-    label: 'DELIVERY',
+    id: 'DevOPS',
+    label: 'INFRA + DELIVERY',
     items: [
+      { name: 'Git / CLI Workflows', level: 'OPERATIONAL' },
+      { name: 'Cloudflare Pages + Workers', level: 'OPERATIONAL' },
       { name: 'Systems Architecture', level: 'OPERATIONAL' },
       { name: 'Data Analysis', level: 'OPERATIONAL' },
       { name: 'Project Management', level: 'OPERATIONAL' },

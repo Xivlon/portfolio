@@ -36,7 +36,7 @@ export const skillGroups: SkillGroup[] = [
       { name: 'TypeScript', level: 'ADVANCED' },
       { name: 'JavaScript', level: 'ADVANCED' },
       { name: 'HTML / CSS', level: 'ADVANCED' },
-      { name: 'C', level: 'INTERMEDIATE' },
+      { name: 'C', level: 'OPERATIONAL' },
       { name: 'Python', level: 'INTERMEDIATE' },
       { name: 'SQL', level: 'INTERMEDIATE' },
       { name: 'Bash / Shell', level: 'OPERATIONAL' },

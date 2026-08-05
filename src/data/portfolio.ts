@@ -49,7 +49,7 @@ export const skillGroups: SkillGroup[] = [
       { name: 'React Native', level: 'ADVANCED' },
       { name: 'React', level: 'ADVANCED' },
       { name: 'WCAG / ADA Compliance', level: 'ADVANCED' },
-      { name: 'Map Integration APIs', level: 'OPERATIONAL' },
+      { name: 'Map Integration APIs', level: 'INTERMEDIATE' },
     ],
   },
   {
@@ -57,20 +57,20 @@ export const skillGroups: SkillGroup[] = [
     label: 'BACKEND + DATA',
     items: [
       { name: 'Node.js', level: 'ADVANCED' },
-      { name: 'Firebase (Auth, Firestore, Functions)', level: 'ADVANCED' },
+      { name: 'Firebase (Auth, Firestore, Functions)', level: 'INTERMEDIATE' },
       { name: 'REST API Design', level: 'OPERATIONAL' },
-      { name: 'PostgreSQL (queries, schema design)', level: 'OPERATIONAL' },
+      { name: 'PostgreSQL (queries, schema design)', level: 'ADVANCED' },
     ],
   },
   {
     id: 'DevOPS',
     label: 'INFRA + DELIVERY',
     items: [
-      { name: 'Git / CLI Workflows', level: 'OPERATIONAL' },
-      { name: 'Cloudflare Pages + Workers', level: 'OPERATIONAL' },
-      { name: 'Systems Architecture', level: 'OPERATIONAL' },
-      { name: 'Data Analysis', level: 'OPERATIONAL' },
-      { name: 'Project Management', level: 'OPERATIONAL' },
+      { name: 'Git / CLI Workflows', level: 'INTERMEDIATE' },
+      { name: 'Cloudflare Pages + Workers', level: 'ADVANCED' },
+      { name: 'Systems Architecture', level: 'INTERMEDIATE' },
+      { name: 'Data Analysis', level: 'ADVANCED' },
+      { name: 'Project Management', level: 'ADVANCED' },
     ],
   },
 ];

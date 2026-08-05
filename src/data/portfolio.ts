@@ -57,9 +57,9 @@ export const skillGroups: SkillGroup[] = [
     label: 'BACKEND + DATA',
     items: [
       { name: 'Node.js', level: 'ADVANCED' },
-      { name: 'Firebase (Auth, Firestore, Functions)', level: 'INTERMEDIATE' },
+      { name: 'Firebase (Auth, Firestore, Functions)', level: 'ADVANCED' },
       { name: 'REST API Design', level: 'OPERATIONAL' },
-      { name: 'PostgreSQL (queries, schema design)', level: 'ADVANCED' },
+      { name: 'PostgreSQL (queries, schema design)', level: 'INTERMEDIATE' },
     ],
   },
   {
@@ -69,8 +69,8 @@ export const skillGroups: SkillGroup[] = [
       { name: 'Git / CLI Workflows', level: 'INTERMEDIATE' },
       { name: 'Cloudflare Pages + Workers', level: 'ADVANCED' },
       { name: 'Systems Architecture', level: 'INTERMEDIATE' },
-      { name: 'Data Analysis', level: 'ADVANCED' },
-      { name: 'Project Management', level: 'ADVANCED' },
+      { name: 'Data Analysis', level: 'INTERMEDIATE' },
+      { name: 'Project Management', level: 'INTERMEDIATE' },
     ],
   },
 ];

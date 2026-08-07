@@ -213,10 +213,10 @@ export const deployments: Deployment[] = [
   {
     ref: 'DPL-03',
     name: 'Millimera',
-    kind: 'WEB // DEMO',
-    link: 'https://millimera.nuruddinsattar.workers.dev',
-    thumb: '/images/millimera.png',
-    note: 'Demo website with multipage navigation and embeded components',
+    kind: 'ADMIN // DEMO',
+    link: 'https://ops-demo.nuruddinsattar.workers.dev/login',
+    thumb: '/images/ops.png',
+    note: 'Demo Admin Page with multipage data parsing and active state tracking',
   },
 ];
 

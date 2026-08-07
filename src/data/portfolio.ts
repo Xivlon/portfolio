@@ -216,7 +216,7 @@ export const deployments: Deployment[] = [
     kind: 'ADMIN // DEMO',
     link: 'https://ops-demo.nuruddinsattar.workers.dev/login',
     thumb: '/images/ops.png',
-    note: 'Demo Admin Page with multipage data parsing and active state tracking',
+    note: 'Demo Admin Page with multipage data parsing and active state tracking. Password is 1234',
   },
 ];
 

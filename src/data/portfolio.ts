@@ -212,7 +212,7 @@ export const deployments: Deployment[] = [
   },
   {
     ref: 'DPL-03',
-    name: 'Millimera',
+    name: 'Admin Ops Page',
     kind: 'ADMIN // DEMO',
     link: 'https://ops-demo.nuruddinsattar.workers.dev/login',
     thumb: '/images/ops.png',

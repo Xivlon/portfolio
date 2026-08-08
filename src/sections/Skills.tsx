@@ -20,15 +20,14 @@ export default function Skills() {
                   key={item.name}
                   className="flex items-center justify-between gap-3 px-4 py-2.5 transition-colors hover:bg-secondary/40"
                 >
-          <ul className="space-y-1 px-4 py-3">
-            {group.items.map((item) => (
-              <li key={item.name} className="text-sm text-foreground">
-                {item.name}
-              </li>
-            ))}
-          </ul>
-        </div>
-      ))}
-    </div>
+                  <span className="flex items-center gap-2.5 text-sm text-foreground/90">
+                    <span className="inline-block h-1.5 w-1.5 bg-primary" />
+                    {item.name}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
   );
 }

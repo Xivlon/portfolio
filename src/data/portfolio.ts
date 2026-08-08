@@ -46,9 +46,9 @@ export const skillGroups: SkillGroup[] = [
     label: 'MOBILE + WEB',
     items: [
       { name: 'React Native'},
-      { name: 'React'},
+      { name: 'React.js'},
       { name: 'WCAG / ADA Compliance'},
-      { name: 'Map Integration APIs'},
+      { name: 'OSM/Graphhopper Integration API'},
     ],
   },
   {
@@ -56,7 +56,6 @@ export const skillGroups: SkillGroup[] = [
     label: 'BACKEND + DATA',
     items: [
       { name: 'Node.js'},
-      { name: 'REST API'},
       { name: 'PostgreSQL'},
     ],
   },
@@ -67,8 +66,6 @@ export const skillGroups: SkillGroup[] = [
       { name: 'Git / CLI Workflows'},
       { name: 'Cloudflare Pages + Workers'},
       { name: 'Systems Architecture'},
-      { name: 'Data Analysis'},
-      { name: 'Project Management'},
     ],
   },
 ];

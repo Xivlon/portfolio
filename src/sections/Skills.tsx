@@ -14,9 +14,9 @@ export default function Skills() {
             </span>
           </div>
           <ul className="space-y-1 px-4 py-3">
-            {group.skills?.map((skill) => (
-              <li key={skill.name} className="text-sm text-foreground">
-                {skill.name}
+            {group.items.map((item) => (
+              <li key={item.name} className="text-sm text-foreground">
+                {item.name}
               </li>
             ))}
           </ul>

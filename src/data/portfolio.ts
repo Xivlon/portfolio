@@ -25,7 +25,7 @@ export const summary = [
 export interface SkillGroup {
   id: string;
   label: string;
-  items: { name: string; level: string }[];
+  items: { name: string; }[];
 }
 
 export const skillGroups: SkillGroup[] = [

@@ -99,17 +99,6 @@ export const experience: Experience[] = [
     ],
   },
   {
-    ref: 'REC-02',
-    role: 'Data Entry Clerk',
-    org: 'Room and Course Scheduling Office, The University of Arizona',
-    location: 'Tucson, AZ',
-    period: '2023-03 — 2023-05',
-    points: [
-      'Applied data‑validation methods to review and correct conflicting records, improving data accuracy.',
-      'Analyzed room capacities and course requirements to optimize space allocation, ensuring efficient use of university resources and minimizing scheduling conflicts.',
-    ],
-  },
-  {
     ref: 'REC-03',
     role: 'Student Researcher',
     org: 'Biosystems Analytics and Technology, The University of Arizona',
@@ -117,7 +106,7 @@ export const experience: Experience[] = [
     period: '2022-09 — 2022-12',
     points: [
       'Performed bioinformatics research with Excel and web-based tools.',
-      'Improved data entry processes. Reduced manual input time. Kept accuracy high in scientific databases.',
+      'Streamlined data entry processes, reducing time spent on manual input while maintaining high accuracy in scientific databases.',
     ],
   },
 ];

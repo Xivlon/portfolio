@@ -19,7 +19,7 @@ export default function Skills() {
                 <li
                   key={item.name}
                   className="flex items-center justify-between gap-3 px-4 py-2.5 transition-colors hover:bg-secondary/40"
-                >
+                   >
                   <span className="flex items-center gap-2.5 text-sm text-foreground/90">
                     <span className="inline-block h-1.5 w-1.5 bg-primary" />
                     {item.name}
@@ -29,5 +29,7 @@ export default function Skills() {
             </ul>
           </div>
         ))}
-  );
+        </div>
+      </div>
+    );
 }

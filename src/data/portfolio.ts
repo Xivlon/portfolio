@@ -34,7 +34,6 @@ export const skillGroups: SkillGroup[] = [
     label: 'LANGUAGES',
     items: [
       { name: 'TypeScript', level: 'ADVANCED' },
-      { name: 'JavaScript', level: 'ADVANCED' },
       { name: 'HTML / CSS', level: 'ADVANCED' },
       { name: 'C', level: 'OPERATIONAL' },
       { name: 'Python', level: 'INTERMEDIATE' },
@@ -43,7 +42,7 @@ export const skillGroups: SkillGroup[] = [
     ],
   },
   {
-    id: 'MOB',
+    id: 'SYS',
     label: 'MOBILE + WEB',
     items: [
       { name: 'React Native', level: 'ADVANCED' },
@@ -57,9 +56,8 @@ export const skillGroups: SkillGroup[] = [
     label: 'BACKEND + DATA',
     items: [
       { name: 'Node.js', level: 'ADVANCED' },
-      { name: 'Firebase (Auth, Firestore, Functions)', level: 'ADVANCED' },
-      { name: 'REST API Design', level: 'OPERATIONAL' },
-      { name: 'PostgreSQL (queries, schema design)', level: 'INTERMEDIATE' },
+      { name: 'REST API', level: 'OPERATIONAL' },
+      { name: 'PostgreSQL', level: 'INTERMEDIATE' },
     ],
   },
   {

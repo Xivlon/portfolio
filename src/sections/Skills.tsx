@@ -1,39 +1,4 @@
 import { skillGroups } from '@/data/portfolio';
-
-// Signal strength scale: 1 bar = OPERATIONAL, 2 = INTERMEDIATE, 3 = ADVANCED.
-const LEVEL_ORDER: Record<string, number> = {
-  OPERATIONAL: 1,
-  INTERMEDIATE: 2,
-  ADVANCED: 3,
-};
-const LEVEL_COLOR: Record<string, string> = {
-  OPERATIONAL: 'bg-red-500',
-  INTERMEDIATE: 'bg-primary',
-  ADVANCED: 'bg-accent',
-};
-
-function SignalBar({ level }: { level: string }) {
-  const lit = LEVEL_ORDER[level] ?? 0;
-  const litColor = LEVEL_COLOR[level] ?? 'bg-border';
-  return (
-    <span className="flex items-end gap-[3px]" aria-hidden="true">
-      {[1, 2, 3].map((seg) => (
-        <span
-          key={seg}
-          className={`w-[3px] ${seg <= lit ? litColor : 'bg-border'}`}
-          style={{ height: `${4 + seg * 3}px` }}
-        />
-      ))}
-    </span>
-  );
-}
-
-// Legend: one key for the whole module, not a tag per row.
-const legend = [
-  { level: 'OPERATIONAL', bars: 1, color: 'text-red-500' },
-  { level: 'INTERMEDIATE', bars: 2, color: 'text-primary' },
-  { level: 'ADVANCED', bars: 3, color: 'text-accent' },
-];
 export default function Skills() {
   return (
     <div>

@@ -48,7 +48,7 @@ export const skillGroups: SkillGroup[] = [
       { name: 'React Native'},
       { name: 'React.js'},
       { name: 'WCAG / ADA Compliance'},
-      { name: 'OSM/Graphhopper Integration API'},
+      { name: 'OSM/Graphhopper API Integration'},
     ],
   },
   {

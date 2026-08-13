@@ -37,6 +37,14 @@ export default function Summary() {
         </div>
       </div>
     </div>
+       
+    <div className="mb-4 mt-8 flex items-center gap-3">
+        <span className="hazard inline-block h-2 w-8" />
+        <h3 className="text-xs font-semibold tracking-[0.3em] text-primary">
+          COMM CHANNELS
+        </h3>
+        <span className="h-px flex-1 bg-primary/30" />
+      </div>
     <div>
       <div className="grid gap-px border border-border bg-border">
         <a

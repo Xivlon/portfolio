@@ -220,7 +220,6 @@ export const modules: ModuleDef[] = [
   { id: 'deploy', code: 'M.05', label: 'DEPLOY', title: 'DEPLOYMENT BAY', subtitle: '// LIVE WORK SAMPLES' },
   { id: 'education', code: 'M.06', label: 'EDU', title: 'TRAINING RECORD', subtitle: '// FORMAL EDUCATION' },
   { id: 'certs', code: 'M.07', label: 'CERTS', title: 'CERTIFICATION SYSTEM', subtitle: '// CREDENTIAL REGISTER + TRACKER' },
-  { id: 'comm', code: 'M.08', label: 'COMM', title: 'COMM CHANNEL', subtitle: '// OPEN FOR SOFTWARE ENGINEER POSITIONS' },
 ];
 
 // Completed certifications. Full color on the page.

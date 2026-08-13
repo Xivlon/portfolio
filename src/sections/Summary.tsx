@@ -37,8 +37,6 @@ export default function Summary() {
         </div>
       </div>
     </div>
-  );
-  return (
     <div>
       <div className="grid gap-px border border-border bg-border">
         <a

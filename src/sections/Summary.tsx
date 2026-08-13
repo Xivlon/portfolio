@@ -14,6 +14,7 @@ export default function Summary() {
           ))}
         </div>
       </Panel>
+    </div>
 
       <div className="mt-4 grid gap-px border border-border bg-border sm:grid-cols-3">
         <div className="bg-card/80 px-4 py-3">

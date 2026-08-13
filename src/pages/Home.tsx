@@ -18,7 +18,6 @@ const views = [
   <Deployments />,
   <Education />,
   <Certifications />,
-  <Contact />,
 ];
 
 export default function Home() {

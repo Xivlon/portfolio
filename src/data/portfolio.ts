@@ -17,9 +17,9 @@ export const identity = {
 };
 
 export const summary = [
-  'Full-stack software developer with 2 years of experience engineering end‑to‑end software solutions, specializing in React Native, Node.js, and cloud‑native backend architectures.',
+  'Full-stack developer with 2 years of experience engineering multi-platform systems',
+  'Specialized in React interfaces and cloud‑native backend architectures.',
   'Maintains system compliance with accessibility regulations.',
-  'Delivers in fast environments with limited resources.',
 ];
 
 export interface SkillGroup {

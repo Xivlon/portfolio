@@ -66,7 +66,7 @@ export default function Home() {
           <div className="sticky top-6">
             <WheelNav active={active} onSelect={select} />
             <p className="mt-4 text-center text-[10px] tracking-[0.3em] text-muted-foreground">
-              SWEEP TO ENGAGE // CLICK OR ARROW KEYS
+              SWEEP OR ARROW KEYS TO NAVIGATE
             </p>
           </div>
         </div>

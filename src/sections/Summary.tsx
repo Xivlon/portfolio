@@ -1,5 +1,6 @@
 import Panel from '@/components/chrome/Panel';
 import { identity, summary } from '@/data/portfolio';
+
 export default function Summary() {
   return (
     <div>
@@ -36,16 +37,15 @@ export default function Summary() {
           <p className="mt-1 text-xs tracking-wider text-foreground/90">{identity.phone}</p>
         </div>
       </div>
-    </div>
-       
-    <div className="mb-4 mt-8 flex items-center gap-3">
+
+      <div className="mb-4 mt-8 flex items-center gap-3">
         <span className="hazard inline-block h-2 w-8" />
         <h3 className="text-xs font-semibold tracking-[0.3em] text-primary">
           COMM CHANNELS
         </h3>
         <span className="h-px flex-1 bg-primary/30" />
       </div>
-    <div>
+
       <div className="grid gap-px border border-border bg-border">
         <a
           href={`mailto:${identity.email}`}
@@ -79,9 +79,6 @@ export default function Summary() {
           </p>
         </a>
       </div>
-      <p className="mt-4 text-[11px] tracking-widest text-muted-foreground">
-        NOTE: THIS CHANNEL IS OPEN FOR SOFTWARE ENGINEER POSITIONS.
-      </p>
     </div>
   );
 }

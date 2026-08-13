@@ -14,7 +14,6 @@ export default function Summary() {
           ))}
         </div>
       </Panel>
-    </div>
 
       <div className="mt-4 grid gap-px border border-border bg-border sm:grid-cols-3">
         <div className="bg-card/80 px-4 py-3">
@@ -24,7 +23,22 @@ export default function Summary() {
             {identity.status}
           </p>
         </div>
-     <div className="mb-4 mt-8 flex items-center gap-3">
+        <div className="bg-card/80 px-4 py-3">
+          <p className="text-[10px] tracking-[0.3em] text-muted-foreground">COMM // EMAIL</p>
+          <a
+            href={`mailto:${identity.email}`}
+            className="mt-1 block break-all text-xs tracking-wider text-foreground/90 transition-colors hover:text-primary"
+          >
+            {identity.email}
+          </a>
+        </div>
+        <div className="bg-card/80 px-4 py-3">
+          <p className="text-[10px] tracking-[0.3em] text-muted-foreground">COMM // PHONE</p>
+          <p className="mt-1 text-xs tracking-wider text-foreground/90">{identity.phone}</p>
+        </div>
+      </div>
+
+      <div className="mb-4 mt-8 flex items-center gap-3">
         <span className="hazard inline-block h-2 w-8" />
         <h3 className="text-xs font-semibold tracking-[0.3em] text-primary">
           COMM CHANNELS
@@ -65,6 +79,9 @@ export default function Summary() {
           </p>
         </a>
       </div>
+      <p className="mt-4 text-[11px] tracking-widest text-muted-foreground">
+        NOTE: THIS CHANNEL IS OPEN FOR SOFTWARE ENGINEER POSITIONS.
+      </p>
     </div>
   );
 }

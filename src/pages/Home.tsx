@@ -8,7 +8,7 @@ import Projects from '@/sections/Projects';
 import Deployments from '@/sections/Deployments';
 import Education from '@/sections/Education';
 import Certifications from '@/sections/Certifications';
-import Contact from '@/sections/Contact';
+import Summary from '@/sections/Contact';
 import { identity, modules } from '@/data/portfolio';
 
 const views = [

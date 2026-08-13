@@ -9,9 +9,8 @@ interface Props {
 const CX = 210;
 const CY = 210;
 const R_OUT = 178;
-const R_PULL = 12; // how far the active wedge moves outward
-const WEDGE = 360 / 8; // 45 degrees
-
+const R_PULL = 12;
+const WEDGE = 360 / modules.length;
 function polar(angleDeg: number, radius: number) {
   const rad = (angleDeg * Math.PI) / 180;
   return { x: CX + radius * Math.cos(rad), y: CY + radius * Math.sin(rad) };

@@ -1,6 +1,5 @@
 import Panel from '@/components/chrome/Panel';
 import { identity, summary } from '@/data/portfolio';
-import { identity } from '@/data/portfolio';
 export default function Summary() {
   return (
     <div>

@@ -1,6 +1,7 @@
 import Panel from '@/components/chrome/Panel';
 import { identity, summary } from '@/data/portfolio';
 export default function Summary() {
+export default function Contact() {
   return (
     <div>
       <Panel className="p-6 sm:p-8">
@@ -39,8 +40,6 @@ export default function Summary() {
     </div>
   );
 }
-
-export default function Contact() {
   return (
     <div>
       <div className="grid gap-px border border-border bg-border">

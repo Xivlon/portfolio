@@ -188,14 +188,6 @@ export const deployments: Deployment[] = [
   },
   {
     ref: 'DPL-02',
-    name: 'Luggster — Customer Order Form',
-    kind: 'WEB // LIVE',
-    link: 'https://lugg-ster.com/',
-    thumb: '/images/OrderFormMap.png',
-    note: 'Customer order form. Map routing and delivery cost calculation included.',
-  },
-  {
-    ref: 'DPL-03',
     name: 'Admin Ops Page',
     kind: 'ADMIN // DEMO',
     link: 'https://ops-demo.nuruddinsattar.workers.dev/login',

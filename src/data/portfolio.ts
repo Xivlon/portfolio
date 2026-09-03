@@ -148,7 +148,6 @@ export const education = [
     school: 'Bahcesehir University',
     degree: 'B.Sc. Electrical and Electronics Engineering',
     period: '2025-10 — PRESENT',
-    note: 'Coursework: Robotics, AI Systems, Hardware-Software Integration.',
   },
   {
     ref: 'EDU-02',

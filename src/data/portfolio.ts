@@ -177,7 +177,7 @@ export interface Deployment {
 
 // Live work samples.
 export const deployments: Deployment[] = [
-  {
+  //{
 //    ref: 'DPL-01',
 //    name: 'Luggster — Mobile Application',
   //  kind: 'MOBILE // PRODUCTION',

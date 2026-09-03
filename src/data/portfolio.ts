@@ -179,21 +179,13 @@ export interface Deployment {
 // Live work samples.
 export const deployments: Deployment[] = [
   {
-    ref: 'DPL-01',
-    name: 'Luggster — Mobile Application',
-    kind: 'MOBILE // PRODUCTION',
-    link: '',
-    thumb: '/images/luggster-app-icon.png',
-    note: 'Full-stack luggage delivery application. Built with React Native, Node.js, PostgreSQL.',
-  },
-  {
-    ref: 'DPL-02',
-    name: 'Admin Ops Page',
-    kind: 'ADMIN // DEMO',
-    link: 'https://ops-demo.nuruddinsattar.workers.dev/login',
-    thumb: '/images/ops.png',
-    note: 'Demo Admin Page with multipage data parsing and active state tracking. NOT CONNECTED TO CUSTOMER ORDER FORM. Password: 1234',
-  },
+//    ref: 'DPL-01',
+//    name: 'Luggster — Mobile Application',
+  //  kind: 'MOBILE // PRODUCTION',
+   // link: '',
+   // thumb: '/images/luggster-app-icon.png',
+    //note: 'Full-stack luggage delivery application. Built with React Native, Node.js, PostgreSQL.',
+  //},
 ];
 
 export interface ModuleDef {
